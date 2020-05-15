@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\Versioning.props" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="glad\glad.cpp" />
+    <ClCompile Include="runtime.Graphics\chart.cpp" />
+    <ClCompile Include="runtime.Graphics\chartAPI.cpp" />
+    <ClCompile Include="runtime.Graphics\err_handling.cpp" />
+    <ClCompile Include="runtime.Graphics\exception.cpp" />
+    <ClCompile Include="runtime.Graphics\exceptionAPI.cpp" />
+    <ClCompile Include="runtime.Graphics\font.cpp" />
+    <ClCompile Include="runtime.Graphics\fontAPI.cpp" />
+    <ClCompile Include="runtime.Graphics\glfw\windowGLFW.cpp" />
+    <ClCompile Include="runtime.Graphics\handle.cpp" />
+    <ClCompile Include="runtime.Graphics\histogram.cpp" />
+    <ClCompile Include="runtime.Graphics\histogramAPI.cpp" />
+    <ClCompile Include="runtime.Graphics\image.cpp" />
+    <ClCompile Include="runtime.Graphics\imageAPI.cpp" />
+    <ClCompile Include="runtime.Graphics\opengl\chart_impl.cpp" />
+    <ClCompile Include="runtime.Graphics\opengl\colormap_impl.cpp" />
+    <ClCompile Include="runtime.Graphics\opengl\font_atlas_impl.cpp" />
+    <ClCompile Include="runtime.Graphics\opengl\font_impl.cpp" />
+    <ClCompile Include="runtime.Graphics\opengl\gl_helpers.cpp" />
+    <ClCompile Include="runtime.Graphics\opengl\gl_native_handles.cpp" />
+    <ClCompile Include="runtime.Graphics\opengl\histogram_impl.cpp" />
+    <ClCompile Include="runtime.Graphics\opengl\image_impl.cpp" />
+    <ClCompile Include="runtime.Graphics\opengl\plot_impl.cpp" />
+    <ClCompile Include="runtime.Graphics\opengl\shader_program.cpp" />
+    <ClCompile Include="runtime.Graphics\opengl\surface_impl.cpp" />
+    <ClCompile Include="runtime.Graphics\opengl\update_buffer.cpp" />
+    <ClCompile Include="runtime.Graphics\opengl\vector_field_impl.cpp" />
+    <ClCompile Include="runtime.Graphics\opengl\window_impl.cpp" />
+    <ClCompile Include="runtime.Graphics\plot.cpp" />
+    <ClCompile Include="runtime.Graphics\plotAPI.cpp" />
+    <ClCompile Include="runtime.Graphics\surface.cpp" />
+    <ClCompile Include="runtime.Graphics\surfaceAPI.cpp" />
+    <ClCompile Include="runtime.Graphics\util.cpp" />
+    <ClCompile Include="runtime.Graphics\vector_field.cpp" />
+    <ClCompile Include="runtime.Graphics\vector_fieldAPI.cpp" />
+    <ClCompile Include="runtime.Graphics\window.cpp" />
+    <ClCompile Include="runtime.Graphics\windowAPI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="runtime.Graphics.NET.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="glad\glad.h" />
+    <ClInclude Include="glsl_shaders\chart_fs.hpp" />
+    <ClInclude Include="glsl_shaders\chart_vs.hpp" />
+    <ClInclude Include="glsl_shaders\font_fs.hpp" />
+    <ClInclude Include="glsl_shaders\font_vs.hpp" />
+    <ClInclude Include="glsl_shaders\histogram_fs.hpp" />
+    <ClInclude Include="glsl_shaders\histogram_vs.hpp" />
+    <ClInclude Include="glsl_shaders\image_fs.hpp" />
+    <ClInclude Include="glsl_shaders\image_vs.hpp" />
+    <ClInclude Include="glsl_shaders\marker2d_vs.hpp" />
+    <ClInclude Include="glsl_shaders\marker_fs.hpp" />
+    <ClInclude Include="glsl_shaders\plot3_fs.hpp" />
+    <ClInclude Include="glsl_shaders\plot3_vs.hpp" />
+    <ClInclude Include="glsl_shaders\tick_fs.hpp" />
+    <ClInclude Include="glsl_shaders\vector_field2d_gs.hpp" />
+    <ClInclude Include="glsl_shaders\vector_field2d_vs.hpp" />
+    <ClInclude Include="glsl_shaders\vector_field_gs.hpp" />
+    <ClInclude Include="glsl_shaders\vector_field_vs.hpp" />
+    <ClInclude Include="GraphicsAPI.hpp" />
+    <ClInclude Include="runtime.Graphics\chart.h" />
+    <ClInclude Include="runtime.Graphics\chart.hpp" />
+    <ClInclude Include="runtime.Graphics\chart_common.hpp" />
+    <ClInclude Include="runtime.Graphics\chart_renderables.hpp" />
+    <ClInclude Include="runtime.Graphics\cmap.hpp" />
+    <ClInclude Include="runtime.Graphics\compute_copy.h" />
+    <ClInclude Include="runtime.Graphics\defines.h" />
+    <ClInclude Include="runtime.Graphics\defines.hpp" />
+    <ClInclude Include="runtime.Graphics\error.hpp" />
+    <ClInclude Include="runtime.Graphics\err_handling.hpp" />
+    <ClInclude Include="runtime.Graphics\exception.h" />
+    <ClInclude Include="runtime.Graphics\font.h" />
+    <ClInclude Include="runtime.Graphics\font.hpp" />
+    <ClInclude Include="runtime.Graphics\glfw\window.hpp" />
+    <ClInclude Include="runtime.Graphics\Graphics.h" />
+    <ClInclude Include="runtime.Graphics\handle.hpp" />
+    <ClInclude Include="runtime.Graphics\histogram.h" />
+    <ClInclude Include="runtime.Graphics\image.h" />
+    <ClInclude Include="runtime.Graphics\image.hpp" />
+    <ClInclude Include="runtime.Graphics\opengl\abstract_renderable.hpp" />
+    <ClInclude Include="runtime.Graphics\opengl\backend.hpp" />
+    <ClInclude Include="runtime.Graphics\opengl\chart_impl.hpp" />
+    <ClInclude Include="runtime.Graphics\opengl\colormap_impl.hpp" />
+    <ClInclude Include="runtime.Graphics\opengl\font_atlas_impl.hpp" />
+    <ClInclude Include="runtime.Graphics\opengl\font_impl.hpp" />
+    <ClInclude Include="runtime.Graphics\opengl\gl_helpers.hpp" />
+    <ClInclude Include="runtime.Graphics\opengl\gl_native_handles.hpp" />
+    <ClInclude Include="runtime.Graphics\opengl\histogram_impl.hpp" />
+    <ClInclude Include="runtime.Graphics\opengl\image_impl.hpp" />
+    <ClInclude Include="runtime.Graphics\opengl\plot_impl.hpp" />
+    <ClInclude Include="runtime.Graphics\opengl\shader_program.hpp" />
+    <ClInclude Include="runtime.Graphics\opengl\surface_impl.hpp" />
+    <ClInclude Include="runtime.Graphics\opengl\vector_field_impl.hpp" />
+    <ClInclude Include="runtime.Graphics\opengl\window_impl.hpp" />
+    <ClInclude Include="runtime.Graphics\plot.h" />
+    <ClInclude Include="runtime.Graphics\surface.h" />
+    <ClInclude Include="runtime.Graphics\update_buffer.h" />
+    <ClInclude Include="runtime.Graphics\util.hpp" />
+    <ClInclude Include="runtime.Graphics\vector_field.h" />
+    <ClInclude Include="runtime.Graphics\window.h" />
+    <ClInclude Include="runtime.Graphics\window.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{298DAF95-2BA1-4BBA-AA86-C0528D0D9E47}</ProjectGuid>
+    <RootSolutionDir>..\..\Graphics.NET\</RootSolutionDir>
+    <UseMultiToolTask>true</UseMultiToolTask>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>clang</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>clang</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(RootSolutionDir)..\BuildTools\Clang.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(TargetName)</TargetName>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>$(TargetName)</TargetName>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <CompileAs />
+      <UndefinePreprocessorDefinitions>_MSC_VER</UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_WINNT_IGNORE_VOID;GRAPHICS_NET_EXPORTS;DEBUG;_DEBUG;WIN64;_WIN64;_WINDOWS;_GNU_SOURCE;_USE_MATH_DEFINES;MBCS;_MBCS</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <AdditionalIncludeDirectories>../../BuildTools;./;D:/TFS_Sources/Build/arrayfire/install/include;$(CUSP_PATH);$(CUDA_PATH)/include;$(CUDNN_PATH)/include;C:/POSIX/mingw64/include/freetype2</AdditionalIncludeDirectories>
+      <ExceptionHandling />
+      <AdditionalOptions>-shared -gfull -gcodeview -Xcuda-ptxas -O0 -Xcuda-ptxas -w -Xcuda-ptxas --device-debug -w -O0 -std=c++14 -fcaret-diagnostics -fdiagnostics-show-template-tree -fcolor-diagnostics -fdiagnostics-parseable-fixits -fdiagnostics-format=msvc --target=x86_64-w64-windows-gnu-coff -fno-signed-char -fpermissive -femulated-tls -fcxx-exceptions -march=core-avx2 -mtune=core-avx2 -fno-trapping-math -fno-signed-zeros -ftemplate-backtrace-limit=0 -ferror-limit=10 -fvectorize -fslp-vectorize --cuda-path=C:/POSIX/usr/local/cuda-10.2 --cuda-gpu-arch=sm_52 -x cuda -Wa,-mbig-obj -fopenmp=libomp</AdditionalOptions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <DiagnosticsFormat />
+      <MultiProcessorCompilation />
+      <InlineFunctionExpansion />
+      <IntrinsicFunctions />
+      <FavorSizeOrSpeed />
+      <OmitFramePointers>false</OmitFramePointers>
+      <EnableFiberSafeOptimizations />
+      <StringPooling />
+      <MinimalRebuild />
+      <ControlFlowGuard />
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <EnableEnhancedInstructionSet />
+      <FloatingPointModel />
+      <DisableLanguageExtensions />
+      <ConformanceMode />
+      <ForceConformanceInForLoopScope />
+      <EnforceTypeConversionRules />
+      <RuntimeTypeInfo />
+      <ExpandAttributedSource />
+      <BrowseInformation />
+      <CallingConvention />
+      <OmitDefaultLibName />
+      <ErrorReporting />
+      <SDLCheck />
+      <Optimization />
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+      <SuppressStartupBanner />
+      <WarningLevel />
+      <TreatWarningAsError />
+      <WholeProgramOptimization />
+      <TreatWChar_tAsBuiltInType />
+      <UseFullPaths />
+      <StrictAliasing />
+      <CLanguageStandard>
+      </CLanguageStandard>
+      <CppLanguageStandard>
+      </CppLanguageStandard>
+      <MSCompatibility>
+      </MSCompatibility>
+      <MSExtensions>true</MSExtensions>
+      <UseShortEnums />
+      <PrecompiledHeaderCompileAs />
+      <Verbose />
+      <UndefineAllPreprocessorDefinitions />
+      <ShowIncludes />
+      <DataLevelLinking />
+      <PositionIndependentCode />
+      <PrecompiledHeaderOutputFileDirectory />
+      <ObjectFileName>$(IntPosixDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary />
+      <PrecompiledHeader />
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>
+      </GenerateDebugInformation>
+      <LinkErrorReporting />
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <SuppressStartupBanner />
+      <AdditionalDependencies>C:/POSIX/mingw64/lib/libfreetype.a,-lglfw3,-lglm,-lpng,-lbz2,C:/POSIX/mingw64/lib/libharfbuzz.a,-lz,C:/POSIX/mingw64/lib/libgraphite2.a,-lopengl32,-lgdi32,-lrpcrt4</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries />
+      <ManifestFile />
+      <EnableUAC />
+      <UACExecutionLevel />
+      <UACUIAccess />
+      <ProgramDatabaseFile />
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <ProfileGuidedDatabase />
+      <RandomizedBaseAddress />
+      <DataExecutionPrevention />
+      <TargetMachine />
+      <CLRUnmanagedCodeCheck />
+      <CLRSupportLastError />
+      <TypeLibraryResourceID />
+      <OutputFile>$(OutPosixDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>-LD:/TFS_Sources/Build/arrayfire/install/lib</AdditionalLibraryDirectories>
+    </Link>
+    <Lib>
+      <SubSystem>
+      </SubSystem>
+      <OutputFile>$(OutPosixDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner />
+    </Lib>
+    <PostBuildEvent>
+      <Command>"C:\Program Files (x86)\NuGet\nuget.exe" pack "$(ProjectDir)runtime.Graphics.NET.nuspec" -Properties Configuration=$(Configuration);Platform=$(Platform) -OutputDirectory C:\AssemblyCache\_packages</Command>
+    </PostBuildEvent>
+    <ProjectReference />
+    <CustomBuildStep>
+      <Command>"C:\Program Files (x86)\NuGet\nuget.exe" pack "$(ProjectDir)runtime.Graphics.NET.nuspec" -Properties Configuration=$(Configuration);Platform=$(Platform);Version=$(RUNTIME_GRAPHICS_VERSION) -OutputDirectory C:\AssemblyCache\_packages
+    </Command>
+      <Outputs>C:\AssemblyCache\_packages\native.Graphics.NET.$(Platform).$(RUNTIME_GRAPHICS_VERSION).nupkg</Outputs>
+      <TreatOutputAsContent>false</TreatOutputAsContent>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck />
+      <PreprocessorDefinitions>-D_WIN64 -D_WINDOWS -D_GNU_SOURCE -D_USE_MATH_DEFINES</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <AdditionalIncludeDirectories>C:/AssemblyCache/Trilinos/include</AdditionalIncludeDirectories>
+      <AdditionalOptions>--target=x86_64-w64-windows-gnu-coff %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeaderOutputFileDirectory />
+      <PrecompiledHeaderCompileAs />
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck />
+      <PreprocessorDefinitions>-D_WIN64 -D_WINDOWS -D_GNU_SOURCE -D_USE_MATH_DEFINES</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:/AssemblyCache/Trilinos/include</AdditionalIncludeDirectories>
+      <AdditionalOptions>--target=x86_64-w64-windows-gnu-coff %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeaderOutputFileDirectory />
+      <PrecompiledHeaderCompileAs />
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <CompileAs />
+      <UndefinePreprocessorDefinitions>_MSC_VER</UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_WINNT_IGNORE_VOID;GRAPHICS_NET_EXPORTS;NDEBUG;_NDEBUG;WIN64;_WIN64;_WINDOWS;_GNU_SOURCE;_USE_MATH_DEFINES;_MBCS</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <AdditionalIncludeDirectories>../../BuildTools;./;D:/TFS_Sources/Build/arrayfire/install/include;$(CUSP_PATH);$(CUDA_PATH)/include;$(CUDNN_PATH)/include;C:/POSIX/mingw64/include/freetype2</AdditionalIncludeDirectories>
+      <ExceptionHandling />
+      <AdditionalOptions>-shared -Xcuda-ptxas -w -w -O3 -std=c++14 -fcaret-diagnostics -fdiagnostics-show-template-tree -fcolor-diagnostics -fdiagnostics-parseable-fixits -fdiagnostics-format=msvc --target=x86_64-w64-windows-gnu-coff -fno-signed-char -fpermissive -femulated-tls -fcxx-exceptions -march=core-avx2 -mtune=core-avx2 -fno-trapping-math -fno-signed-zeros -ftemplate-backtrace-limit=0 -ferror-limit=10 -fvectorize -fslp-vectorize --cuda-path=C:/POSIX/usr/local/cuda-10.2 --cuda-gpu-arch=sm_52 -x cuda -Wa,-mbig-obj -fopenmp=libomp</AdditionalOptions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <DiagnosticsFormat />
+      <MultiProcessorCompilation />
+      <InlineFunctionExpansion />
+      <IntrinsicFunctions />
+      <FavorSizeOrSpeed />
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations />
+      <StringPooling />
+      <MinimalRebuild />
+      <ControlFlowGuard />
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <EnableEnhancedInstructionSet />
+      <FloatingPointModel />
+      <DisableLanguageExtensions />
+      <ConformanceMode />
+      <ForceConformanceInForLoopScope />
+      <EnforceTypeConversionRules />
+      <RuntimeTypeInfo />
+      <ExpandAttributedSource />
+      <BrowseInformation />
+      <CallingConvention />
+      <OmitDefaultLibName />
+      <ErrorReporting />
+      <SDLCheck />
+      <Optimization />
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+      <SuppressStartupBanner />
+      <WarningLevel />
+      <TreatWarningAsError />
+      <WholeProgramOptimization />
+      <TreatWChar_tAsBuiltInType />
+      <UseFullPaths />
+      <StrictAliasing />
+      <CLanguageStandard>
+      </CLanguageStandard>
+      <CppLanguageStandard>
+      </CppLanguageStandard>
+      <MSCompatibility>
+      </MSCompatibility>
+      <MSExtensions>true</MSExtensions>
+      <UseShortEnums />
+      <PrecompiledHeaderCompileAs />
+      <Verbose />
+      <UndefineAllPreprocessorDefinitions />
+      <ShowIncludes />
+      <DataLevelLinking />
+      <PositionIndependentCode />
+      <PrecompiledHeaderOutputFileDirectory />
+      <ObjectFileName>$(IntPosixDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary />
+      <PrecompiledHeader />
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>
+      </GenerateDebugInformation>
+      <LinkErrorReporting />
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <SuppressStartupBanner />
+      <AdditionalDependencies>C:/POSIX/mingw64/lib/libfreetype.a,-lglfw3,-lglm,-lpng,-lbz2,C:/POSIX/mingw64/lib/libharfbuzz.a,-lz,C:/POSIX/mingw64/lib/libgraphite2.a,-lopengl32,-lgdi32,-lrpcrt4</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries />
+      <ManifestFile />
+      <EnableUAC />
+      <UACExecutionLevel />
+      <UACUIAccess />
+      <ProgramDatabaseFile />
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <ProfileGuidedDatabase />
+      <RandomizedBaseAddress />
+      <DataExecutionPrevention />
+      <TargetMachine />
+      <CLRUnmanagedCodeCheck />
+      <CLRSupportLastError />
+      <TypeLibraryResourceID />
+      <OutputFile>$(OutPosixDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>-LD:/TFS_Sources/Build/arrayfire/install/lib</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>"C:\Program Files (x86)\NuGet\nuget.exe" pack "$(ProjectDir)runtime.Graphics.NET.nuspec" -Properties Configuration=$(Configuration);Platform=$(Platform) -OutputDirectory C:\AssemblyCache\_packages</Command>
+    </PostBuildEvent>
+    <ProjectReference />
+    <Lib>
+      <OutputFile>$(OutPosixDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Lib>
+      <SuppressStartupBanner />
+    </Lib>
+    <CustomBuildStep>
+      <Command>"C:\Program Files (x86)\NuGet\nuget.exe" pack "$(ProjectDir)runtime.Graphics.NET.nuspec" -Properties Configuration=$(Configuration);Platform=$(Platform);Version=$(RUNTIME_GRAPHICS_VERSION) -OutputDirectory C:\AssemblyCache\_packages
+    </Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>C:\AssemblyCache\_packages\native.Graphics.NET.$(Platform).$(RUNTIME_GRAPHICS_VERSION).nupkg</Outputs>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <TreatOutputAsContent>false</TreatOutputAsContent>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(RootSolutionDir)..\BuildTools\Clang.targets" />
+  <Target Name="Link">
+    <CallTarget Targets="ClangLink" />
+  </Target>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

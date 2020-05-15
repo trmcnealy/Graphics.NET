@@ -1,0 +1,26 @@
+{
+    "name": "web-graphics",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "build-tsc": "npx tsc --build",
+        "build-asc": "npx asc index.ts -b optimized.wasm -t optimized.wat -O3 --runtime none --importMemory --validate",
+        "build": "npm run build-asc && npm run build-tsc",
+        "clean": "tsc --build --clean",
+        "start": "node index",
+        "dev": "NODE_ENV=development npm run build"
+    },
+    "description": "WebGraphics",
+    "author": {
+        "name": ""
+    },
+    "main": "index.ts",
+    "ascMain": "dist/index.d.ts",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "assemblyscript": "^0.9.0",
+        "glob": "^7.1.2",
+        "typescript": "3.x"
+    }
+}

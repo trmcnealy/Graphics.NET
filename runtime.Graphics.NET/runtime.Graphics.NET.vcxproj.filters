@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c94c4e15-0a56-40dd-9cd0-43a06b3522a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="runtime.Graphics">
+      <UniqueIdentifier>{6c2562c2-e293-4949-a43b-dca6222e82e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glad">
+      <UniqueIdentifier>{30bd3e80-7952-4773-a72d-b9d08f4d1e9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glsl_shaders">
+      <UniqueIdentifier>{060afc87-d64d-47d9-8cc0-7b08fcafd269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="runtime.Graphics\API">
+      <UniqueIdentifier>{0722a881-3fc2-484e-8026-1020963637e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="runtime.Graphics\opengl">
+      <UniqueIdentifier>{fcf16415-3104-4201-a2f6-50e8315dcce0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="runtime.Graphics\glfw">
+      <UniqueIdentifier>{49c95a82-8da0-482e-ba3d-6a6b6d3731e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glad\glad.cpp">
+      <Filter>glad</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\histogram.cpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\image.cpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\plot.cpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\surface.cpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\util.cpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\vector_field.cpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\window.cpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\chart.cpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\err_handling.cpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\exception.cpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\font.cpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\handle.cpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\chartAPI.cpp">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\exceptionAPI.cpp">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\fontAPI.cpp">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\histogramAPI.cpp">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\imageAPI.cpp">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\surfaceAPI.cpp">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\plotAPI.cpp">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\vector_fieldAPI.cpp">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\windowAPI.cpp">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\opengl\surface_impl.cpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\opengl\update_buffer.cpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\opengl\vector_field_impl.cpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\opengl\window_impl.cpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\opengl\chart_impl.cpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\opengl\colormap_impl.cpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\opengl\font_atlas_impl.cpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\opengl\font_impl.cpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\opengl\gl_helpers.cpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\opengl\gl_native_handles.cpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\opengl\histogram_impl.cpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\opengl\image_impl.cpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\opengl\plot_impl.cpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\opengl\shader_program.cpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime.Graphics\glfw\windowGLFW.cpp">
+      <Filter>runtime.Graphics\glfw</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="runtime.Graphics.NET.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GraphicsAPI.hpp" />
+    <ClInclude Include="glad\glad.h">
+      <Filter>glad</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\marker_fs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\marker2d_vs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\plot3_fs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\plot3_vs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\tick_fs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\vector_field_gs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\vector_field_vs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\vector_field2d_gs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\vector_field2d_vs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\chart_fs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\chart_vs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\font_fs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\font_vs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\histogram_fs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\histogram_vs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\image_fs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="glsl_shaders\image_vs.hpp">
+      <Filter>glsl_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\compute_copy.h">
+      <Filter>runtime.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\defines.h">
+      <Filter>runtime.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\Graphics.h">
+      <Filter>runtime.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\chart.hpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\chart_common.hpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\chart_renderables.hpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\cmap.hpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\defines.hpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\err_handling.hpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\error.hpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\font.hpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\handle.hpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\image.hpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\util.hpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\window.hpp">
+      <Filter>runtime.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\opengl\abstract_renderable.hpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\opengl\backend.hpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\opengl\chart_impl.hpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\opengl\colormap_impl.hpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\opengl\font_atlas_impl.hpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\opengl\font_impl.hpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\opengl\gl_helpers.hpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\opengl\gl_native_handles.hpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\opengl\histogram_impl.hpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\opengl\image_impl.hpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\opengl\plot_impl.hpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\opengl\shader_program.hpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\opengl\surface_impl.hpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\opengl\vector_field_impl.hpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\opengl\window_impl.hpp">
+      <Filter>runtime.Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\glfw\window.hpp">
+      <Filter>runtime.Graphics\glfw</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\window.h">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\chart.h">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\image.h">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\font.h">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\exception.h">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\vector_field.h">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\surface.h">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\plot.h">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\histogram.h">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime.Graphics\update_buffer.h">
+      <Filter>runtime.Graphics\API</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>native.Graphics.NET</id>
+    <version>$Version$</version>
+    <authors>Timothy R. McNealy</authors>
+    <owners>Timothy R. McNealy</owners>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/trmcnealy/Graphics.NET</projectUrl>
+    <icon>nindra.png</icon>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Graphics .NET</description>
+    <releaseNotes></releaseNotes>
+    <copyright>© Timothy R. McNealy</copyright>
+    <tags></tags>
+    <dependencies></dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\trmcnealy.github.io\assets\nindra.png"
+          target=""/>
+
+    <file src="..\bin\$Configuration$\$Platform$\runtime.Graphics.NET.$Platform$.dll"
+          target="runtimes\win-$Platform$\native"/>
+    
+    <file src="..\bin\$Configuration$\$Platform$\runtime.Graphics.NET.$Platform$.pdb"
+          target="runtimes\win-$Platform$\native"/>
+
+
+    <!--<file src="C:\POSIX\usr\bin\mpi.dll"
+          target="runtimes\win-x64\native"/>
+
+    <file src="C:\AssemblyCache\LLVM\bin\libomp.dll"
+          target="runtimes\win-x64\native"/>
+
+    <file src="C:\AssemblyCache\kokkos\bin\libkokkoscore.dll"
+          target="runtimes\win-x64\native"/>
+
+    <file src="C:\AssemblyCache\kokkos\bin\libkokkoscontainers.dll"
+          target="runtimes\win-x64\native"/>-->
+  </files>
+</package>
